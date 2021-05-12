@@ -3,17 +3,35 @@
 	"name": "space",
 	"patterns": [
 		{
-			"include": "#keywords"
+			"include": "#statements"
+		},
+		{
+			"include": "#types"
+		},
+		{
+			"include": "#functions"
 		},
 		{
 			"include": "#strings"
 		}
 	],
 	"repository": {
-		"keywords": {
+		"statements": {
 			"patterns": [{
 				"name": "keyword.control.space",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "\\b(if|while|for|ret)\\b"
+			}]
+		},
+		"types": {
+			"patterns": [{
+				"name": "storage.type",
+				"match": "\\b(int|bool|void|var|float)\\b"
+			}]
+		},
+		"functions": {
+			"patterns": [{
+				"name": "support.function",
+				"match": "\\b(|fun|)\\b"
 			}]
 		},
 		"strings": {
