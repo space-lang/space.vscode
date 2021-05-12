@@ -1,0 +1,25 @@
+{
+    "name": "space",
+    "displayName": "space",
+    "description": "The Official VsCode Plugin for the Space Programming Language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.56.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "space",
+            "aliases": ["space", "space"],
+            "extensions": [".space",".spaceo",".spacelib"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "space",
+            "scopeName": "source.space",
+            "path": "./syntaxes/space.tmLanguage.json"
+        }]
+    }
+}
